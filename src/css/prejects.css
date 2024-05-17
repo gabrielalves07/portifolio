@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+:root {
+    --primary-color: #83A2FF;
+    --secondary-color: #B4BDFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #2B2B2B;
+}
+
+p, h1, small {
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 5px 4px;
+    color: var(--primary-color);
+}
+
+nav > a.active {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+nav > a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 120px 0;
+    padding: 40px 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+}
+
+h1 > span {
+    color: var(--primary-color);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    width: 440px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card h1, .card p {
+    color: #2B2B2B;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-footer a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    transition: all 235ms ease-in-out;
+}
+
+.card-footer a:hover {
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 0.5px solid var(--primary-color);
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer > div > div.logo-alura-include {
+    display: flex;
+    justify-content: center;
+}
