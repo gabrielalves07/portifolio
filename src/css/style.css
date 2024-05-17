@@ -77,7 +77,7 @@ div.info > h1 {
     font-weight: 700;
 }
 
-div.info > h1 > span {
+div.info > h1 > span, div.info > h1 > span.span-skills {
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -131,11 +131,16 @@ div.image > img{
     border-radius: 8px;
 }
 
+div.image-skills > img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
 footer {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    border-top: 1px solid var(--primary-color);
+    border-top: 0.5px solid var(--primary-color);
 }
 
 footer > div {
