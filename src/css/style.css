@@ -3,8 +3,8 @@
 
 
 :root {
-    --primary-color: #153448;
-    --secondary-color: #3C5B6F;
+    --primary-color: #83A2FF;
+    --secondary-color: #B4BDFF;
 }
 
 * {
@@ -15,6 +15,14 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+body {
+    background-color: #2B2B2B;
+}
+
+p, h1, small {
+    color: #fff;
 }
 
 header {
@@ -42,4 +50,101 @@ nav > a.active {
 
 nav > a:hover {
     border-bottom: 2px solid var(--secondary-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 120px 0;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 0 20px;
+}
+
+div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    gap: 30px;
+}
+
+div.info > h1 {
+    font-weight: 700;
+}
+
+div.info > h1 > span {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+div.info > p {
+    text-align: justify;
+}
+
+div.links {
+    display: flex;
+    justify-content: center;
+}
+
+div.links > div.links-button {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 260px;
+}
+
+div.links > div.links-button > small {
+    text-align: center;
+}
+
+div.links > div.links-button > a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 0;
+    border: 1.5px solid var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.938) 15px 28px 25px -17px;
+    box-sizing: border-box;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+div.links > div.links-button > a:hover {
+    box-shadow: rgba(0, 0, 0, 0.568) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+div.image > img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--primary-color);
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer > div > div.logo-alura-include {
+    display: flex;
+    justify-content: center;
 }
