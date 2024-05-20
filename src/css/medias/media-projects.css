@@ -1,0 +1,21 @@
+@media screen and (max-width: 953px) {
+    .card {
+        width: 48.5%;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .card {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 410px) {
+    nav {
+        gap: 10px;
+    }
+
+    nav > a {
+        font-size: small;
+    }
+}
