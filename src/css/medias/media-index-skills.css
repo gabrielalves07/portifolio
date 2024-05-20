@@ -1,0 +1,23 @@
+@media screen and (max-width: 695px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    div.image > img, div.image-skills > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    nav {
+        gap: 10px;
+    }
+
+    nav > a {
+        font-size: small;
+    }
+
+    div.links > div.links-button {
+        width: 100%;
+    }
+}
