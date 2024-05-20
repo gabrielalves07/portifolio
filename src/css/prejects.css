@@ -66,8 +66,30 @@ section {
     max-width: 900px;
 }
 
-h1 > span {
+h1 {
+    font-weight: 700;
     color: var(--primary-color);
+}
+
+.h-projects::after {
+    content: "|";
+    animation: blink 0.65s infinite;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0s;
+    }
 }
 
 .cards {
